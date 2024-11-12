@@ -1,0 +1,88 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer{
+    flex: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
+
+}
+.header{
+    flex: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 40px;
+}
+
+.sideBar{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 1;
+    background-color: coral;
+    border: 1px solid black;
+    padding: 5px;
+    color: gray;
+    
+}
+
+.midleBar{
+    flex: 2;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: justify;
+    
+}
+
+.smallTitle{
+    flex: 100%;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.imagesBox{
+    flex: 100%;
+    align-content: center;
+}
+
+
+.images{
+ 
+ width: 100%;
+ height: auto;
+ 
+}
+
+.text{
+    flex: 100%;
+    text-align: justify;
+    color: black;
+}
+
+
+@media screen and (max-width: 800px) {
+    
+    .sideBar{
+        flex:100%;
+        
+    }
+    .midleBar{
+        flex:100%;
+    }
+    .imagesBox{
+        flex: 50%;
+        order: 2;
+        min-width: 300px;
+    }
+    .text{
+        flex: 30%;
+    }
+}
